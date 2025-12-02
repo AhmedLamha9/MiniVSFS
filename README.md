@@ -109,11 +109,11 @@ int find_free_bit(uint8_t *bitmap, int bitmap_size) {
 
 - First-fit policy for inode and data block allocation
 - 4KB bitmap tracks 32,768 blocks (128MB of data)
-- Space overhead: only 0.003%
+
 
 ### 4. Robust Error Handling
 
-- 40+ specific error conditions with meaningful messages
+- 24 specific error conditions with meaningful messages
 - Graceful resource cleanup on failure
 - Validation before modification (filename length, duplicates, space)
 
